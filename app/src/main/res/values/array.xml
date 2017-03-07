@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="BanEntries">
+        <item>1飜</item>
+        <item>2飜</item>
+        <item>3飜</item>
+        <item>4飜</item>
+        <item>5飜</item>
+        <item>6飜</item>
+        <item>7飜</item>
+        <item>8飜</item>
+        <item>9飜</item>
+        <item>10飜</item>
+        <item>11飜</item>
+        <item>12飜</item>
+        <item>13飜</item>
+        <item>26飜</item>
+        <item>39飜</item>
+        <item>52飜</item>
+        <item>65飜</item>
+        <item>78飜</item>
+        <item>91飜</item>
+        <item>104飜</item>
+        <item>117飜</item>
+    </string-array>
+    <string-array name="FuEntries">
+        <item>20符</item>
+        <item>25符</item>
+        <item>30符</item>
+        <item>40符</item>
+        <item>50符</item>
+        <item>60符</item>
+        <item>70符</item>
+        <item>80符</item>
+        <item>90符</item>
+        <item>100符</item>
+        <item>110符</item>
+    </string-array>
+    <string-array name="UmaEntries">
+        <item>無順位馬</item>
+        <item>5‧10</item>
+        <item>10‧20</item>
+    </string-array>
+</resources>

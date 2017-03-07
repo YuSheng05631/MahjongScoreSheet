@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mahjongscoresheet.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_richi_p4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_name4"
+        android:layout_alignBottom="@+id/tv_name4"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_richi_p3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_name3"
+        android:layout_alignBottom="@+id/tv_name3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_richi_p2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_name2"
+        android:layout_alignBottom="@+id/tv_name2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="0"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp" />
+
+    <TextView
+        android:text="25000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_point1"
+        android:textSize="22sp"
+        android:textColor="@color/pureBlue"
+        android:onClick="alterPoint" />
+
+    <TextView
+        android:id="@+id/tv_richi_p1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="0"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp" />
+
+    <TextView
+        android:text="Player2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_name2"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/tv_point1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="alterName" />
+
+    <TextView
+        android:text="Player1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_name1"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="alterName" />
+
+    <TextView
+        android:text="25000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_point2"
+        android:textSize="22sp"
+        android:textColor="@color/pureBlue"
+        android:onClick="alterPoint" />
+
+    <TextView
+        android:text="Player3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_point2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_name3"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:onClick="alterName" />
+
+    <TextView
+        android:text="25000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_point3"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp"
+        android:onClick="alterPoint" />
+
+    <TextView
+        android:text="25000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_name4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv_point4"
+        android:textColor="@color/pureBlue"
+        android:textSize="22sp"
+        android:onClick="alterPoint" />
+
+    <TextView
+        android:text="東一局"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_point4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_kyoku"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:onClick="alterKyoku" />
+
+    <TextView
+        android:text="Player4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_name4"
+        android:textColor="@android:color/black"
+        android:textSize="22sp"
+        android:layout_below="@+id/tv_point3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="alterName" />
+
+    <TextView
+        android:text="，"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_comma1"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/tv_kyoku"
+        android:layout_alignBottom="@+id/tv_kyoku"
+        android:layout_toRightOf="@+id/tv_kyoku"
+        android:layout_toEndOf="@+id/tv_kyoku" />
+
+    <TextView
+        android:text="0本場"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_honba"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/tv_comma1"
+        android:layout_alignBottom="@+id/tv_comma1"
+        android:layout_toRightOf="@+id/tv_comma1"
+        android:layout_toEndOf="@+id/tv_comma1"
+        android:onClick="alterHonba" />
+
+    <TextView
+        android:text="，"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_comma2"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/tv_honba"
+        android:layout_alignBottom="@+id/tv_honba"
+        android:layout_toRightOf="@+id/tv_honba"
+        android:layout_toEndOf="@+id/tv_honba" />
+
+    <TextView
+        android:text="立直棒x0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_richi"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:onClick="alterRichi"
+        android:layout_alignBaseline="@+id/tv_comma2"
+        android:layout_alignBottom="@+id/tv_comma2"
+        android:layout_toRightOf="@+id/tv_comma2"
+        android:layout_toEndOf="@+id/tv_comma2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_below="@+id/tv_kyoku"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/b_ron"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:onClick="clickRon"
+            android:text="榮和"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_tsumo"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/b_ron"
+            android:layout_alignBottom="@+id/b_ron"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_ron"
+            android:layout_toRightOf="@+id/b_ron"
+            android:layout_weight="1"
+            android:onClick="clickTsumo"
+            android:text="自摸"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_ron2"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/b_tsumo"
+            android:layout_alignBottom="@+id/b_tsumo"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_tsumo"
+            android:layout_toRightOf="@+id/b_tsumo"
+            android:layout_weight="1"
+            android:onClick="clickRon2"
+            android:text="一砲多響"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/b_ryuukyoku"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/b_ron"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:onClick="clickRyuukyoku"
+            android:text="流局"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_richi"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/b_ryuukyoku"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_ryuukyoku"
+            android:layout_toRightOf="@+id/b_ryuukyoku"
+            android:layout_weight="1"
+            android:onClick="clickRichi"
+            android:text="立直"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_differ"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b_ron2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_richi"
+            android:layout_toRightOf="@+id/b_richi"
+            android:layout_weight="1"
+            android:onClick="clickDiffer"
+            android:text="點差查詢"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/b_back"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/b_richi"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="1"
+            android:onClick="clickBack"
+            android:text="還原"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_reset"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/b_back"
+            android:layout_alignBottom="@+id/b_back"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_back"
+            android:layout_toRightOf="@+id/b_back"
+            android:layout_weight="1"
+            android:onClick="clickReset"
+            android:text="重開"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/b_table"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/b_ron2"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_toEndOf="@+id/b_richi"
+            android:layout_toRightOf="@+id/b_richi"
+            android:layout_weight="1"
+            android:onClick="clickTable"
+            android:text="點表查詢"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

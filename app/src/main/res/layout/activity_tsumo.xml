@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_tsumo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mahjongscoresheet.TsumoActivity">
+
+    <TextView
+        android:text="選擇哪一家自摸："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/tv1"
+        android:textSize="22sp"
+        android:textColor="@android:color/black" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/rg" >
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb1"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:checked="true" />
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb2"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb3"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+
+        <RadioButton
+            android:text="RadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rb4"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:textColor="@android:color/black" />
+    </RadioGroup>
+
+    <TextView
+        android:text="選擇飜符："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/rg"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/sp_ban"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:entries="@array/BanEntries" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_fu"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:entries="@array/FuEntries"
+        android:layout_alignBaseline="@+id/sp_ban"
+        android:layout_alignBottom="@+id/sp_ban"
+        android:layout_toRightOf="@+id/sp_ban"
+        android:layout_toEndOf="@+id/sp_ban" />
+
+    <Button
+        android:text="確定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/b_OK"
+        style="@android:style/Widget.Button"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/sp_ban"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="b_OK" />
+
+</RelativeLayout>

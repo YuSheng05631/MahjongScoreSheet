@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ron2_b"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mahjongscoresheet.Ron2BActivity">
+
+    <TextView
+        android:text="選擇飜符："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="22sp"
+        android:textColor="@android:color/black" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_ban1"
+        android:entries="@array/BanEntries"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_below="@+id/tv1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="選擇飜符："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv2"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/sp_ban1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_ban2"
+        android:entries="@array/BanEntries"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_below="@+id/tv2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_fu1"
+        android:entries="@array/FuEntries"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_alignBaseline="@+id/sp_ban1"
+        android:layout_alignBottom="@+id/sp_ban1"
+        android:layout_toRightOf="@+id/sp_ban1"
+        android:layout_toEndOf="@+id/sp_ban1" />
+
+    <Spinner
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_fu2"
+        android:entries="@array/FuEntries"
+        style="@android:style/Widget.Spinner.DropDown"
+        android:layout_alignBaseline="@+id/sp_ban2"
+        android:layout_alignBottom="@+id/sp_ban2"
+        android:layout_toRightOf="@+id/sp_ban2"
+        android:layout_toEndOf="@+id/sp_ban2" />
+
+    <Button
+        android:text="確定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/b_OK"
+        style="@android:style/Widget.Button"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/sp_ban2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="b_OK" />
+</RelativeLayout>
